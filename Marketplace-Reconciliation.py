@@ -188,7 +188,7 @@ with st.container(border=True):
         with col4:
             st.markdown("**4. Assignment Code**")
             assignment_val = st.text_input(
-                "Assignment Code untuk Template SAP",
+                "Untuk Template SAP",
                 placeholder="PAYADV_ID21",
                 help="Nilai ini akan mengisi kolom Assignment pada tabel Journal Upload"
             )
