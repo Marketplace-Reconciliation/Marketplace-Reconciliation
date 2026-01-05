@@ -12,20 +12,25 @@ st.title("Marketplace Reconciliation")
 
 # --- 2. Definisi Kolom Wajib Data Transaksi Valid dan Invalid ---
 TIKTOK_REQUIRED = [
-    'order_id', 'prev_order_id', 'type', 'order_settled_time', 'warehouse_name', 
-    'shop_name', 'brand', 'product_quantity', 'product_total_amount', 'product_price_difference_amount', 
-    'calculated_seller_discounts', 'calculated_fee', 'calculated_discount', 'calculated_shipping_fee', 
-    'calculated_sfp_fee', 'calculated_affiliate_commission', 'calculated_refund', 'actual_settlement_amount', 
-    'calculated_settlement_amount', 'selisih'
-    ]
+    'warehouse_name', 
+    'order_settled_time', 
+    'product_total_amount', 
+    'shipping_cost', 
+    'affiliate_partner_shop_ads_commission', 
+    'sfp_service_fee', 
+    'total_fees', 
+    'total_settlement_amount',
+]
 
 SHOPEE_REQUIRED = [
-    'warehouse_name', 'shop_name', 'product', 'quantity', 'price',
-    'discount_price_difference', 'voucher_seller', 'discount_seller',
-    'total_discount', 'shipping_fee', 'affiliate_commission_fee',
-    'commission_fee', 'service_fee', 'processing_fee',
-    'total_comission_processing_and_service_fee', 'refund_amount',
-    'calculated_payout_amount'
+    'warehouse_name',                          
+    'quantity',                                 
+    'price',                                    
+    'total_discount',                           
+    'shipping_fee',                             
+    'affiliate_commission_fee',                 
+    'total_comission_processing_and_service_fee', 
+    'calculated_payout_amount'                  
 ]
 
 LAZADA_REQUIRED = [
